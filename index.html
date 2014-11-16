@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>jQuery Notification based on jQuery Growl</title>
+
+		<link rel="stylesheet" type="text/css" href="./css/jquery.growl.css"></style>
+		<link rel="stylesheet" type="text/css" href="./css/style.css"></style>
+
+		<script type="text/JavaScript" src="./js/jquery-2.1.1.min.js"></script>
+		<script type="text/JavaScript" src="./js/jquery.growl.js"></script>
+		<script type="text/JavaScript" src="./js/NotificationService.js"></script>
+		<script type="text/JavaScript" src="./js/script.js"></script>
+	</head>
+	<body>
+		<h1>NotificationService.js</h1>
+		<div class="container description">
+			Mit hilfe des jQuery Plugins NotificationService ist es möglich, definierte Notifications (Mitteilungen/Hinweise) auf der Webseite anzuzeigen. Dieses Plugin basiert auf jQuery Growl und wurde erweitert. Jetzt ist es möglich, den Notifications mit einem Icon zu verschönern.
+		</div>
+		<div class="container">
+			<h3>Notification Service</h3>
+			<div class="border padding">
+				<button id="error">
+					click me, I'm a error!
+				</button>
+				<button id="warn">
+					click me, I'm a warning!
+				</button>
+				<button id="notice">
+					click me, I'm a notice!
+				</button>
+				<button id="top">
+					click me, I'm a top notification
+				</button>
+				<button onclick="JavaScript:localStorage.clear();">
+					clear LocalStorage
+				</button>
+			</div>
+		</div>
+
+		<div class="footer container">
+			<p>
+				&copy; 2014 <a href="http://www.mliebgott.de" target="_blank" title="mliebgott.de">mliebgott.de</a>
+			</p>
+		</div>
+	</body>
+</html>
